@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+<script>
+    childNodes 元素下的所有节点
+children  子元素节点
+
+function children(parent){if(type parent ==="string"){parent =document.querySelectorAll(parrnt);}else if(paarent.Nodetype ===1){pwrent=parent
+
+};if(parent =null){return"请正确传参"};const childrens= parent.childNodes;
+let =[];
+for(let i=0;i<childrens.length;i++){if(childrens[i].nodeType ===1){
+    arr.push(childrens[i]);
+}}return arr;};
+console.log(children('ul'));
+</script>
+
+
+</html>

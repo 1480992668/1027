@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <input type="text" id="txt"><button id="btn">发</button>
+  <ul id ="ul"></ul>
+</body>
+
+<script>
+
+  btn.onclick=function(){
+        let val =txt.value;
+        let li =document.createElement('li');
+        li.onclick =function(){
+            ul.removeChild(this);
+        };
+        li.innerText =val;
+        ul.appendChild(li);
+        txt.value = "";
+    }
+/* 
+    btn.onclick = function(){
+        let val = txt.value; //变量是存储数据的
+        let li = document.createElement('li');
+        li.onclick = function(){
+            ul.removeChild(this);
+        }
+        li.innerText = val;
+        ul.appendChild(li);
+        // val = '';
+        txt.value = '';
+    } */
+
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #box {
+            position: absolute;
+            top: -110px;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <button id='btu'>555</button>
+    <div id='box'></div>
+</body>
+<script>
+    /* <!-- 达到条件就执行定时器 --> */
+    /*   let timer = setInterval(function () { setTimeout(function () { box.style.top = 0; setTimeout(function () { box.style.top = '-100px' }, 2000) }, 2000) }, 4050); 
+   */
+
+    let onoff = true;
+    function fn() { setTimeout(function () { box.style.top = 0; setTimeout(function () { box.style.top = '-100px'; onoff && fn() }, 2000) }, 2000) };
+    fn();
+    btn.onclick = function () {
+        onoff = false;
+    }
+
+
+
+
+</script>
+
+</html>

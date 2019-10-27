@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+
+    .a{border:2px soild #000};
+    .b{background: red;};
+    #bos{
+        width: 100px;height: 100px;
+    }
+    .c{display: none;};
+</style>
+</head>
+<body>
+    <button id ="a">a</button>;
+    <button id ="b">b</button>;
+    <button id ="c">c</button>;
+    <div id ="box" class="d">1</div>
+
+</body>
+
+<script>
+const bos =docment.getEllementById("bos");
+a.onclick=function(){bos.classlist("b","a")};
+b.onclick=function(){
+    if(bos.classList.contains("a")){bos.classList.remove("a")bos.classList.add("b")}
+},
+c.onclick=function(){
+    bos.classList.toggle("c")
+}
+
+
+</script>
+</html>
